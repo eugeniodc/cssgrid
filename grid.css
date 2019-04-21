@@ -1,0 +1,13 @@
+.contenedor {
+    display: grid;
+    /* Tamaño de cada columna en px % o !nuevo! fr fracción*/
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: 20% 20% 20%; */
+    /* grid-template-columns: 1fr 1fr 2fr; */
+    /* También podemos hacer que la primera columna sea fija y que el resto sobrante lo utilice fracciones */
+    grid-template-columns: 200px 1fr 1fr;
+    /* Tamaño de cada fila, el resto pondra un tamaño  */
+    grid-template-rows: 150px 300px;
+    /* Espacio entre cada uno de nuestro elementos */
+    grid-gap: 20px;
+}
