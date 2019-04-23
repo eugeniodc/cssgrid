@@ -1,0 +1,26 @@
+.contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    /* Izquierda Sólo va abarcar lo que necesite horizontalmente */
+    /* justify-items: start; */
+    /* Va abarcar todo el espacio horizontalmente */
+    /* justify-items: stretch; */
+    /* Centrar con el minimo espacio horizontalmente necesario */
+    /* justify-items: center; */
+    /* Derecha Sólo  con el minimo espacio horizontalmente necesario */
+    justify-items: center;
+    /* Lo mismo para verticalmente */
+    /* auto | start | stretch | center | end (Auto, Izq, estirar, centrar, derecha   */
+    align-items: center;
+}
+
+.contenedor .item {
+    background: #ff8000;
+    /* No lo utilizarias. Ocupa el 100% pero no respeta la parte de gap. */
+    /* width: 100%; */
+    /* como se debería hacer */
+    justify-self: stretch;
+    align-self: center;
+}
